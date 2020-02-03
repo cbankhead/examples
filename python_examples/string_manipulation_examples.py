@@ -86,7 +86,7 @@ print("\n")
 
 
 print("How can we split 'my_string' into multiple strings?:")
-print(my_string.split(" ")) # Here were are spitting the sting in the 'my_string' variable into sub-stings.
+print(my_string.split(" ")) # Here were are spitting the string in the 'my_string' variable into sub-stings.
 print("\n")
 
 
@@ -127,16 +127,22 @@ print("Our question is: {}".format(my_string)) # Insert the variable 'my_string'
 print("Our answer is: {}".format(my_reply)) # Insert the variable 'my_reply' that just happens to be a answer to the question into the '{}' placeholder.
 print("\n")
 
+
 like_how = "like this"  # Add a new string variable
 number_seven = 7  # Add a new int variable
 print("We could also do a sting %s." % (like_how.upper())) # print text, concatenate string variable with values inserted via placeholders.
 
+
 print("Or a string and a the number '%d' %s." % (number_seven, like_how.upper())) # print text, concatenate string variable & int variable with the values inserted via placeholders.
 print("\n")
+
 
 print("We could also use f-strings to place our variables into our string.") # This feature came out in Python3.6.
 print(f"How might you ask? {like_how}.") # Use f-strings to insert the 'like_how' string variable into our print statement.
 print(f"Better yet: {like_how.capitalize()}!") # Use f-strings to insert the 'like_how' string variable into our print statement and use the capitalize() String Method to capitalize the first letter of the 'like_how' string variable.
 print("\n")
+
+
+print("Thats all the stringy stuff I can think of ATM, the end.")
 
 
