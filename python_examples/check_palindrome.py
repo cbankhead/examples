@@ -3,6 +3,8 @@ import time
 import os
 
 
+# The easy way: if my_string == my_string[::-1]: do something.
+
 def palindrome_check():
 
     my_string = input("Submit a word or phrase to be checked if it is a Palindrome:")
