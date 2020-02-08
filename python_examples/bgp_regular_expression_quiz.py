@@ -5,6 +5,8 @@ import time
 
 
 def bgp_quiz():
+
+    # Define our answers
     q1 = "Enter a regex that means 'Anything': "
     q2 = "Enter a regex that means 'Directly Connected AS#'s': "
     q3 = "Enter a regex that means 'Locally Originated Routes': "
@@ -27,7 +29,7 @@ def bgp_quiz():
     q20 = "Two ways to controll BGP advertisements?"
     q21 = "IPv6 Link Local prefix?"
 
-
+    # Define out questions
     a1 = ".*"
     a2 = "^[0-9]+$"
     a3 = "^$"
@@ -50,15 +52,17 @@ def bgp_quiz():
     a20 = "NO_EXPORT, NO_ADVERTISE"
     a21 = "FE80"
 
-
+    # Create Q/A pairs
     pairs = {q1:a1, q2:a2, q3:a3, q4:a4, q5:a5, q6:a6, q7:a7, q8:a8, q9:a9, q10:a10, q11:a11, q12:a12, q13:a13, q14:a14, q15:a15, q16:a16, q17:a17, q18:a18, q19:a19, q20:a20, q21:a21}
     
+
+    # List of what questions we want to be asked.
     question_bank = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20, q21]
 
-
+    # Score/Counter
     score = 0
 
-
+    # Startup Quiz
     os.system('clear')
     print("Starting BGP Quiz:" "\n")
 
@@ -69,7 +73,7 @@ def bgp_quiz():
         response = input(question)
         answer = pairs[question]
         
-        
+    # Output Responses
         if answer in response:
             score = score + 1
             print("\n")
